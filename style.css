@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    background-color: #011F3F;
+}
+
+button{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 10px solid black;
+    border-radius: 15px;
+}
+button:active{
+    opacity: 0.5;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+.title{
+    font-size: 4.5rem;
+    margin-bottom: 40px;
+    color: azure;
+}
+.clicked{
+    opacity: 0.5;
+}
