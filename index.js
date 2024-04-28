@@ -21,12 +21,7 @@ function startGame(){
 function generatSecuence(){
     var next = Math.floor(Math.random()*4)+1;
     sequence.push(next);
-    if(sequence.length==1){
-        playSound(sequence);
-    }else{
-        setTimeout(playSound,2000,sequence);
-    }
-    
+    setTimeout(playSound,1000,sequence);
 }
 
 
