@@ -11,7 +11,9 @@ var blue = new Audio("./assets/blue.wav");
 var yellow = new Audio("./assets/yellow.wav");
 
 document.addEventListener("keydown",startGame);
-
+for(var i=0;i<4;i++){
+    document.querySelectorAll("button")[i].addEventListener("mouseup",startGame);
+}
 function startGame(){
     generatSecuence();
 }
@@ -30,6 +32,9 @@ function generatSecuence(){
 
 function playSound(sequenceButtonPlay){
     document.removeEventListener("keydown",startGame);
+    for(var i=0;i<4;i++){
+        document.querySelectorAll("button")[i].removeEventListener("mouseup",startGame);
+    }
     var endSequenceIndex = sequenceButtonPlay.length-1;
         switch (sequenceButtonPlay[endSequenceIndex]) {
             case 1:
